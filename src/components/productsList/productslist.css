@@ -29,3 +29,29 @@
         display: none;
     } */
 }
+@media screen and (max-width:375px) {    
+     .products-title{
+        display: none;
+    }
+    .products-desc{
+        margin-top: 30px;
+        padding:40px 20px 10px 20px;
+    }
+}
+@media screen and (max-width:360px) {
+    
+    .products-list{
+        margin-bottom: 70px;
+    } 
+    .products-desc{
+        margin-top: 150px;
+        line-height: 25px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:320px) {
+    .products-list{
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+}

@@ -49,8 +49,11 @@
     }
     .skill{
         margin: 8px 10px;
+        /* width: 200px; */
     }
-    .rest{
-        margin-top: 25px;
+}
+@media screen and (max-width:320px) {
+    .skills .header{
+        font-size: 1.5rem;
     }
 }

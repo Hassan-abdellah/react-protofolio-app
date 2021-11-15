@@ -32,11 +32,36 @@
 }
 @media screen and (max-width:450px) {
     
+    .slider{
+        margin-top: 20px;
+    }
     .slide{
-        padding-top: 25px;
+        /* padding-top: 25px; */
+        padding-top: 15px;
     }
     .slide-img{
         width: 40px;
         height: 40px;
+    }
+}
+@media screen and (max-width:360px) {
+    
+    .slider{
+        padding-top: 20px;
+    }
+    .slide{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width:320px) {
+    .slider{
+        padding-top: 45px;
+    }
+    .slide{
+        padding-top: 20px;
+    }
+    .slide .slide-img{
+        width: 35px;
+        height: 35px;
     }
 }

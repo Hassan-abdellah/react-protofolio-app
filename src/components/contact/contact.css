@@ -7,8 +7,6 @@
     position:fixed;
     top:30px;
     right:-300px;
-    /* top:30px;
-    right:30px; */
     background-color:#006400;
     background-color:#59b256;
     color:#fff;
@@ -192,5 +190,24 @@ button{
     }
     .contact-right h2{
         margin-top: 10px;
+    }
+}
+@media screen and (max-width:375px) {    
+    .contact-title{
+        display: none;
+    }
+}
+@media screen and (max-width:360px) {
+    
+    .contact-right h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:320px) {
+    .contact-wrapper{
+        padding: 50px 15px;
+    }
+    .contact-bg{
+        display: none;
     }
 }

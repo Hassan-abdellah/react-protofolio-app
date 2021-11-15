@@ -69,7 +69,7 @@ const Skills = () => {
                         <div className="inner" style={{width: "60%"}}></div>
                     </div>
                 </div>
-                <div className="skill">
+                {/* <div className="skill">
                     <div className="skill-info">
                         <div className="skill-name">Socket io</div>
                         <div className="skill-percent">50%</div>
@@ -77,7 +77,7 @@ const Skills = () => {
                     <div className="skill-meter">
                         <div className="inner" style={{width: "50%"}}></div>
                     </div>
-                </div>
+                </div> */}
                 <div className="skill">
                     <div className="skill-info">
                         <div className="skill-name">Linux OS</div>
