@@ -1,7 +1,6 @@
 import React from 'react'
 import './intro.css';
 import Me from '../../images/me.jpg'
-import Trees from '../../images/Trees.png'
 const Intro = () => {
     return (
         <div className="intro-container" id="intro">
