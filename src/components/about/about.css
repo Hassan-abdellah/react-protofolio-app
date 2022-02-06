@@ -65,7 +65,7 @@
     margin-right: 8px;
     margin-bottom: 5px;
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:425px) {
     .about-card.bg{
         top: 90px;
     }
@@ -75,26 +75,25 @@
     }
 }
 @media screen and (max-width:375px) {    
-    
-    .about-card{
-        width: 80%;
-        width: 150px;
+    .about{
+        align-items: stretch;
+        padding: 100px 20px;
     }
-    .about-card.bg{
-        display: none;
+    .about-title{
+        margin-bottom: 20px;
     }
     .download-btn{
         font-size: 0.9rem;
         font-weight: 200;
         letter-spacing: 0px;
     }
+    .about-left{
+        display: none;
+    }
 }
 @media screen and (max-width:320px) {
     .about{
         align-items: stretch;
         padding: 100px 20px;
-    }
-    .about-left{
-        display: none;
     }
 }

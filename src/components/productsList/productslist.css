@@ -14,6 +14,10 @@
     padding: 20px 20px;
     line-height: 30px;
 }
+.products-desc span{
+    color:#59b256;
+    font-size: 1.1rem;
+}
 .projects{
     display: flex;
     flex-wrap: wrap;
@@ -21,37 +25,74 @@
     text-align: center; 
     width: 100%;
 }
-@media screen and (max-width:450px) {
+@media screen and (min-width:1024px) {
+    .products-title{
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .products-desc{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .products-desc span{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .products-list{
+        padding: 0 10px;
+    }
+    .products-title{
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .products-desc{
+        margin-top: 0px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .products-desc span{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:425px) {
     .products-list{
         padding: 0 20px;
+    }
+    .products-title{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .products-desc{
+        margin-top: 0px;
+        font-size: 1.04rem;
+        text-align: center;
+    }
+    .products-desc span{
+        font-size: 1.2rem;
     }    
-    /* .products-title, .products-desc{
-        display: none;
-    } */
 }
 @media screen and (max-width:375px) {    
      .products-title{
         display: none;
     }
     .products-desc{
-        margin-top: 30px;
-        padding:40px 20px 10px 20px;
-    }
-}
-@media screen and (max-width:360px) {
-    
-    .products-list{
-        margin-bottom: 70px;
-    } 
-    .products-desc{
-        margin-top: 150px;
-        line-height: 25px;
-        padding: 10px;
+        margin-top: 0px;
+        font-size: 1.03rem;
+        text-align: center;
     }
 }
 @media screen and (max-width:320px) {
     .products-list{
-        margin-top: 100px;
-        margin-bottom: 120px;
+        margin-bottom: 20px;
+    }
+    .products-desc{
+        margin-top: 0px;
+        font-size: 1.03rem;
+        text-align: center;
+    }
+    .products-desc span{
+        font-size: 1.1rem;
     }
 }

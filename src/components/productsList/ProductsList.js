@@ -10,7 +10,7 @@ const ProductsList = () => {
                 <p className="products-desc">
                     Here is a list of my previous projects
                     <br/>
-                    Feel free to check them out     
+                    <span>Feel free to check them out</span>     
                 </p>
             </div>
             <div className="projects">

@@ -32,3 +32,13 @@
         left:20px
     }
 }
+
+@media screen and (max-width:768px) {
+    .social-icons{
+        justify-content: end;
+    }
+    .social-icon{
+        width: 30px;
+        height: 30px;
+    }
+}

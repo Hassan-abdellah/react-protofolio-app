@@ -22,6 +22,9 @@
 .intro-left-wrapper h1{
     font-size: 60px;
 }
+.intro-desc{
+    font-size: 2rem;
+}
 .scroll-icon{
     width:30px;
     height: 30px;
@@ -85,13 +88,52 @@
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (min-width:1025px) {
+    .intro-left-wrapper{
+        height: 70%;
+    }
+    .intro-desc{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .intro-left-wrapper{
+        height: 100%;
+    }
+    .intro-right .intro-img{
+        height: 100%;
+    }
+    .scroll-icon{
+        bottom: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .intro-desc{
+        font-size: 1.3rem;
+    }
+    .intro-left-wrapper{
+        height: 100%;
+    }
+    .intro-right .intro-img{
+        height: 100%;
+    }
+    .scroll-icon{
+        bottom: 10px;
+    }
+}
+@media screen and (max-width:425px) {
     .intro-container{
         flex-direction: column;
     }
     .intro-left-wrapper{
         padding:0 20px;
         height: 100%;
+    }
+    .intro-left-wrapper h2{
+        padding-top: 15px;
     }
     .intro-left-wrapper h1{
         font-size: 40px;
