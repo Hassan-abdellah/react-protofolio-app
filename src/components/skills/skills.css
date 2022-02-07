@@ -43,6 +43,9 @@
     width: 100%;
 }
 @media screen and (min-width: 1025px) {
+    .skills{
+        padding-top: 100px;
+    }
     .skills-wrapper{
         grid-template-columns: repeat(2,1fr);
         padding:20px 10px;

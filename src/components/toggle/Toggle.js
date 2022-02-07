@@ -13,7 +13,7 @@ const Toggle = () => {
     return (
         <div className="toggle" onClick={toggleTheme}>
             <img src={Sun} alt="sun-img" className="toggle-img"/>
-            <img src={Moon} alt="moon-img" className="toggle-img"/>
+            <img src={Moon} alt="moon-img" className="toggle-img moon"/>
             <div className={theme.state.darkMode ? "toggle-btn dark" :"toggle-btn"}></div>
         </div>
     )

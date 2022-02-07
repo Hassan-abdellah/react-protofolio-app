@@ -14,9 +14,13 @@
 }
 .about-card.bg{
     position: absolute;
-    top:50px;
-    left:50px;
-    background-color: #333;
+    /* top:50px; */
+    top:100px;
+    /* left:50px; */
+    left:100px;
+    width: 35%;
+    border: 5px solid var(--main-color);
+    /* background-color: #333; */
 }
 .about-card{
     width: 60%;
@@ -79,6 +83,8 @@
     margin-right: 8px;
     margin-bottom: 5px;
 }
+
+
 @media screen and (max-width:425px) {
     .about-left{
         display: none;

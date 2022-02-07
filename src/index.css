@@ -7,7 +7,9 @@
     outline: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+:root{
+    --main-color:#59b256;
+}
 ::selection{
     color:#fff;
     background-color:#202020;

@@ -5,14 +5,15 @@
     width:100%;
     height:10px;
     background-color:inherit;
+    background-color:transparent;
     border-radius:5px;
-    z-index: 999;
+    z-index: 998;
   }
-  .bar{
+  .progress .bar{
     height:100%;
     /* width:50px; */
     border-radius:5px;
     background-color:green;
-    background-color:#59b256;
+    background-color:var(--main-color);
     transition: width 0.2s ease;
   }

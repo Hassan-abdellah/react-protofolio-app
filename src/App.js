@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
-// import Nav from "./components/nav/Nav";
+import Nav from "./components/nav/Nav";
 import ProductsList from "./components/productsList/ProductsList";
 import Skills from "./components/skills/Skills";
 // import Slider from "./components/slider/Slider";
@@ -34,7 +34,7 @@ function App() {
   },[width]);
   return (
     <div className={darkMode ? 'app dark': 'app'} >
-      {/* <Nav/> */}
+      <Nav/>
       <ProgressBar width={width}/>
       <Toggle/>
       <Intro/>
