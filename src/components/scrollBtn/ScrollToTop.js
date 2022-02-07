@@ -5,7 +5,7 @@ const ScrollToTop = ({scrollBtn}) => {
     return (
         <button className={ scrollBtn ? "scrollBtn show" : "scrollBtn"}
          onClick={() => scroll.scrollToTop()}>
-            <i class="fas fa-chevron-up"></i>
+            <i className="fas fa-chevron-up"></i>
         </button>
     )
 }

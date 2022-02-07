@@ -12,7 +12,7 @@ export const products = [
     {
       id: 3,
       img: "/preview/social-auth1.png",
-      link: "https://github.com/Hassan-abdellah",
+      link: "https://github.com/Hassan-abdellah/blog-app-mern-stack",
     },
     {
       id: 4,
