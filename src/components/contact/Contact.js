@@ -72,6 +72,7 @@ const Contact = () => {
                              Giza, Egypt
                         </div>
                     </div>
+                    <Social/>
                 </div>
                 <div className="contact-right">
                     <p className="contact-desc">
@@ -104,7 +105,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <Social/>
+            {/* <Social/> */}
         </div>
     )
 }

@@ -1,0 +1,32 @@
+.scrollBtn{
+    border: 0;
+    outline: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    cursor: pointer;
+    background-color:#59b256;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transform: translateY(700px);
+    transition: transform 1s ease-in-out;
+}
+.scrollBtn.show{
+    transform: translateY(0);
+}
+.scrollBtn i{
+    font-size: 1.5rem;
+}
+@media screen and (max-width:425px) {
+    .scrollBtn{
+        bottom: 5px;
+        left:5px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}

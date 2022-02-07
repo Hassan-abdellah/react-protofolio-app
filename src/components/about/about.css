@@ -36,7 +36,20 @@
     position: relative;
 }
 .about-title{
+    margin-bottom: 20px;
     font-weight: 400;
+    font-size: 2rem;
+    position: relative;
+}
+.about-title::after{
+    content: "";
+    position: absolute;
+    bottom:-10px;
+    left:0;
+    width:20%;
+    height: 5px;
+    background-color: #59b256;
+    transition: all 1s ease;
 }
 .about-desc{
     font-weight: 300;
@@ -44,6 +57,7 @@
     font-size: 1.2rem;
     padding-right: 10px;
 }
+
 .download-btn{
     border:0;
     cursor: pointer;
@@ -66,8 +80,19 @@
     margin-bottom: 5px;
 }
 @media screen and (max-width:425px) {
-    .about-card.bg{
-        top: 90px;
+    .about-left{
+        display: none;
+    }
+    .about{
+        align-items: stretch;
+        padding: 100px 20px;
+    }
+    .about-desc{
+        line-height: 45px;
+        font-size: 1.5rem;
+    }
+    .about-title{
+        margin-bottom: 50px;
     }
     .download-btn{
         width: auto;
@@ -75,25 +100,21 @@
     }
 }
 @media screen and (max-width:375px) {    
-    .about{
-        align-items: stretch;
-        padding: 100px 20px;
-    }
-    .about-title{
-        margin-bottom: 20px;
-    }
     .download-btn{
         font-size: 0.9rem;
         font-weight: 200;
         letter-spacing: 0px;
     }
-    .about-left{
-        display: none;
+    .about-desc{
+        font-size: 1.27rem;
+        line-height: 45px;
     }
+    
 }
 @media screen and (max-width:320px) {
-    .about{
-        align-items: stretch;
-        padding: 100px 20px;
+    .about-desc{
+        font-size: 1.21rem;
+        line-height: 45px;
+        font-weight: normal;
     }
 }

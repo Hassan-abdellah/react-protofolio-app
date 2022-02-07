@@ -89,7 +89,6 @@
     pointer-events:none;
     font-size:16px;
     transition:all 1s ease;
-    /* display:inline-block; */
 }
 .input-container label span{
     display:inline-block;
@@ -103,7 +102,6 @@
     width:100%;
     height:2px;
     background-color:#59b256;
-    /* transform:translateX(-100%); */
     transform:scaleX(0);
     transform-origin: 50%;
     transition:all 1s ease;
@@ -178,7 +176,18 @@ button{
     }
   }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:1024px) {
+    .input-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    .contact{
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width:425px) {
     .contact{
         height: auto;
     }
@@ -190,6 +199,9 @@ button{
     }
     .contact-right h2{
         margin-top: 10px;
+    }
+    .contact-bg{
+        display: none;
     }
 }
 @media screen and (max-width:375px) {    
@@ -209,10 +221,5 @@ button{
     }
     .contact-bg{
         display: none;
-    }
-}
-@media screen and (max-width:1024px) {
-    .input-container{
-        width: 100%;
     }
 }

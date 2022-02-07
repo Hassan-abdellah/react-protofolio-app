@@ -16,7 +16,7 @@ const About = () => {
                 <h1 className="about-title">About Me</h1>
                 <p className="about-desc">
                     A Communication Engineer love coding, passionate to show my abilities of work and shipping a real world products
-                    or apps for the end users to make their lifes much easy and much funny. 
+                    or apps for the end users to make their lifes much easier and much funny. 
                 </p>
                 <a href="/files/cv.pdf" className="download-btn" download="hassan-abdellah-cv.pdf">
                     <i className="fa fa-download"></i>

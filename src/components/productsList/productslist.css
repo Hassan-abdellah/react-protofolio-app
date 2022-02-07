@@ -75,7 +75,7 @@
 }
 @media screen and (max-width:375px) {    
      .products-title{
-        display: none;
+        letter-spacing: 5px;
     }
     .products-desc{
         margin-top: 0px;

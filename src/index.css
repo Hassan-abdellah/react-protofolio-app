@@ -20,12 +20,6 @@
     background-color: #222;
     color:#fff;
 }
-/* .app.dark .swiper-pagination-bullet{
-    background-color: #fff;
-}
-.app.dark .swiper-pagination-bullet-active{
-    background-color: #59b256;
-} */
 @media screen and (max-width:320px) {
     .app{
         overflow-x: hidden;

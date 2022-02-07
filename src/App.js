@@ -8,12 +8,22 @@ import Skills from "./components/skills/Skills";
 // import Slider from "./components/slider/Slider";
 import Toggle from "./components/toggle/Toggle";
 import ProgressBar from "./components/progressbar/ProgressBar";
+import ScrollToTop from "./components/scrollBtn/ScrollToTop"
 import { ThemeContext } from "./context";
 
 function App() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   const [width,setWidth] = useState(0);
+  const [scrollBtn , setScrollBtn] = useState(false);
+  const showScrollBtn = () => {
+    if(window.scrollY >= 700){
+      setScrollBtn(true);
+    }else{
+      setScrollBtn(false);
+    }
+  }
+  window.addEventListener('scroll', showScrollBtn);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -24,7 +34,6 @@ function App() {
   },[width]);
   return (
     <div className={darkMode ? 'app dark': 'app'} >
-      {/* style={{backgroundColor: darkMode ? "#222" : "#fff", color: darkMode && "#fff"}} */}
       {/* <Nav/> */}
       <ProgressBar width={width}/>
       <Toggle/>
@@ -33,6 +42,7 @@ function App() {
       <Skills/>
       <ProductsList/>
       <Contact/>
+      <ScrollToTop scrollBtn={scrollBtn}/>
     </div>
   );
 }
