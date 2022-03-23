@@ -2,13 +2,13 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .about-left{
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     height: 100%;
 }
@@ -23,24 +23,27 @@
     /* background-color: #333; */
 }
 .about-card{
-    width: 60%;
+    /* width: 60%; */
     height: 70vh;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
 }
 .about-card .about-img{
-    /* width: 100%; */
-    height: 100%;
-    object-fit: fill;
+    width: 100%;
+    height:95%;
+    object-fit: contain;
     border-radius: 30px;
 }
 .about-right{
     flex: 1;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 .about-title{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-weight: 400;
     font-size: 2rem;
     position: relative;
@@ -59,7 +62,7 @@
     font-weight: 300;
     line-height: 35px;
     font-size: 1.2rem;
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 
 .download-btn{
@@ -71,12 +74,10 @@
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 2px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     text-decoration: none;
     width: 200px;
-    /* width: auto; */
 }
 .download-btn i{
     font-size: 1.1rem;
@@ -84,25 +85,17 @@
     margin-bottom: 5px;
 }
 
-
 @media screen and (max-width:425px) {
+    .about-right{
+        gap: 30px;
+        padding-top: 50px;
+    }
     .about-left{
         display: none;
     }
-    .about{
-        align-items: stretch;
-        padding: 100px 20px;
-    }
     .about-desc{
-        line-height: 45px;
+        line-height: 2;
         font-size: 1.5rem;
-    }
-    .about-title{
-        margin-bottom: 50px;
-    }
-    .download-btn{
-        width: auto;
-        position: absolute;
     }
 }
 @media screen and (max-width:375px) {    
@@ -119,8 +112,6 @@
 }
 @media screen and (max-width:320px) {
     .about-desc{
-        font-size: 1.21rem;
-        line-height: 45px;
-        font-weight: normal;
+    line-height: 1.8;   
     }
 }

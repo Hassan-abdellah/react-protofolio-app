@@ -1,7 +1,5 @@
 .contact{
     height: 100vh;
-    position: relative;
-    margin-top: 15px;
 }
 .check-success{
     position:fixed;
@@ -31,14 +29,16 @@
     animation:SlideFromRight 2s ease-in-out forwards;
   }
 .contact-bg{
+    position: absolute;
+    left: 0;
     width: 20px;
     height: 100%;
     background-color: #59b256;
-    position: absolute;
+    /* z-index: -1; */
 }
 .contact-wrapper{
-    padding:50px;
     display: flex;  
+    align-items: center;
 }
 .contact-left{
     flex: 1;
@@ -46,13 +46,12 @@
 .contact-info{
     display: flex;
     align-items: center;
-    /* margin-bottom: 15px; */
     margin-top: 30px;
+    gap: 10px;
 }
 .info-icon{
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 .contact-right{
     flex: 1;
@@ -63,7 +62,6 @@
 }
 .input-container{
     width: 50%;
-    /* height: 50px; */
     position: relative;
     margin: 20px 0px;
 }
@@ -122,7 +120,6 @@ input:valid  + label::after
     width: 100%;
     border: none;
     border-bottom: 2px solid #000;
-    /* margin: 10px 0px; */
     font-size: 14px;
     padding-left: 10px;
     padding-top: 10px;
@@ -148,7 +145,7 @@ textarea:valid  + label::after
   transform:scaleX(1);
 }
 
-button{
+.send-btn{
     border:0;
     cursor: pointer;
     padding:8px 20px;
@@ -180,19 +177,36 @@ button{
     .input-container{
         width: 100%;
     }
+    .contact-bg{
+        z-index: -1;
+    }
 }
 @media screen and (max-width:768px) {
     .contact{
         overflow-y: hidden;
+        padding-top: 70px;
+    }
+    .contact-bg{
+        display: none;
     }
 }
 
 @media screen and (max-width:425px) {
     .contact{
         height: auto;
+        overflow: hidden;
+    }
+    .contact-title{
+        font-size: 1.5rem;
     }
     .contact-wrapper{
         flex-direction: column;
+        align-items: stretch;
+        gap:20px;
+        padding: 50px 0;
+    }
+    .contact-left .social-icons{
+        display: none;
     }
     .input-container{
         width: 100%;
@@ -204,22 +218,8 @@ button{
         display: none;
     }
 }
-@media screen and (max-width:375px) {    
-    .contact-title{
-        display: none;
-    }
-}
-@media screen and (max-width:360px) {
-    
-    .contact-right h2{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:320px) {
+/* @media screen and (max-width:320px) {
     .contact-wrapper{
         padding: 50px 15px;
     }
-    .contact-bg{
-        display: none;
-    }
-}
+} */

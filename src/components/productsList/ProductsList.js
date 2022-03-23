@@ -1,27 +1,26 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './productslist.css';
 import Product from '../product/Product';
 import {products} from '../../data';
+import Buttons from '../buttons/Buttons';
+import { motion } from 'framer-motion';
 const ProductsList = () => {
+    const [filteredCategory,setFilteredCategory] = useState('0');
     return (
-        <div className="products-list" id="work">
+        <div className="products-list wrapper" id="work">
             <div className="products-header">
-                <h1 className="products-title">Create & Inspire</h1>
-                <p className="products-desc">
-                    Here is a list of my previous projects
-                    <br/>
-                    <span>Feel free to check them out</span>     
-                </p>
+                <h1 className="products-title">Gallery</h1>
+                <Buttons filteredCategory={filteredCategory} setFilteredCategory={setFilteredCategory}/>
             </div>
-            <div className="projects">
-                {products && products.map(product => (
+            <motion.div className="projects" layout>
+                {products && products.filter((product) => product.cats.includes(filteredCategory)).map(product => (
                     <Product
                         key={product.id} 
-                        img={product.img}
-                        link={product.link}
+                        product={product}
+                        height={products.filter((product) => product.cats.includes(filteredCategory)).length < 3 ? true :false}
                     />
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }

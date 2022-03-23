@@ -18,11 +18,6 @@ import Css from '../../images/slids/css3.svg';
 import Tailwind from '../../images/slids/tailwindcss.svg';
 import Socket from '../../images/slids/socket.svg';
 
-// tooltip package
-// import Tippy from '@tippyjs/react';
-// import 'tippy.js/dist/tippy.css'; // optional
-
-
 
 // Import Swiper styles
 // import "swiper/css";

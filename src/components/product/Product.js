@@ -1,19 +1,20 @@
 import React from 'react'
 import './product.css';
-const Product = ({img , link}) => {
+import { motion } from 'framer-motion';
+const Product = ({product , height}) => {
     return (
-        <div className="product">
+        <motion.div layout initial={{opacity:0}} animate={{opacity:1}} className={height ? "product height" :"product"}>
             <div className="browser-shape">
                 <div className="circle"></div>
                 <div className="circle"></div>
                 <div className="circle"></div>
             </div>
-            <a href={link} target="_blank" rel="noreferrer">
+            <a href={product.link} target="_blank" rel="noreferrer">
                 <img 
-                 src={img}
-                 alt="" className="product-img" />
+                 src={product.img}
+                 alt="product" className="product-img animate-bg" />
             </a>
-        </div>
+        </motion.div>
     )
 }
 

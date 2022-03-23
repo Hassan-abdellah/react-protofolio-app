@@ -1,9 +1,8 @@
 import React from 'react'
 import './skills.css';
-import Slider from '../slider/Slider';
 const Skills = () => {
     return (
-        <div className="skills" id="skills">
+        <div className="skills wrapper" id="skills">
             <h1 className="header">Here is what i can do</h1>
             <div className="skills-wrapper">
                 <div className="skill">
@@ -78,9 +77,6 @@ const Skills = () => {
                         <div className="inner" style={{width: "80%"}}></div>
                     </div>
                 </div>
-            </div>
-            <div className="rest">
-                <Slider/>
             </div>
         </div>
     )

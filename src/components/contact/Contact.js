@@ -41,7 +41,7 @@ const Contact = () => {
         }
     }
     return (
-        <div className="contact" id="contact">
+        <div className="contact wrapper" id="contact">
             <div className={isSent ? "check-success show" : "check-success"}>
                 <i className="fas fa-check fa-2x"></i>
                 <span>Your Email Sent Successfully</span>
@@ -75,12 +75,7 @@ const Contact = () => {
                     <Social/>
                 </div>
                 <div className="contact-right">
-                    <p className="contact-desc">
-                        <b>What’s your story?</b> Get in touch. 
-                        Always available for freelancing 
-                        if the right project comes along me.
-                    </p>
-                    <h2>You can email me directily from here</h2>
+                    <h2>Email me directily from here</h2>
                     <form ref={formRef} onSubmit={sendEmail}>
                         <div className="input-container">
                             <input type="text" id="userName" name="user_name" value={name} onChange={e => setName(e.target.value)} required/>
@@ -98,7 +93,7 @@ const Contact = () => {
                             <textarea id="userMessage" name="message" rows="5" value={message} onChange={e => setMessage(e.target.value)} required/>
                             <label htmlFor="userMessage" style={{bottom: "7px"}}> <span>Message:</span> </label>
                         </div>
-                        <button type="submit">
+                        <button className='send-btn' type="submit">
                              {isLoading && <img src={Spinner} alt="spinner-gif"/>} 
                              Send
                         </button>

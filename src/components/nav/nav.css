@@ -1,6 +1,5 @@
 .nav{
-    height: 30px;
-    padding:30px 50px;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +8,13 @@
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+}
+.app.dark .nav{
+  border-color: rgba(255,255,255,0.3);
+  background-color: #222;
 }
 .logo{
     width: 30px;
@@ -27,9 +32,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 }
-.list-item:not(:last-of-type){
-    margin-right: 15px;
+.nav-list .social-icons{
+  display: none;
 }
 .list-item a{
     font-size: 1.3rem;
@@ -43,10 +49,6 @@
 .hammenu{
     width: 30px;
     height: 30px;
-    position: absolute;
-    position: fixed;
-    top:10px;
-    left:10px;
     z-index: 1000;
     cursor: pointer;
     display: none;
@@ -85,6 +87,7 @@
   }
   .hammenu.active .bars .bar{
     transform: translateX(5px);
+
   }
   .hammenu.active .bars .bar::before{
     transform: rotate(45deg) translate(5px,-5px);
@@ -102,48 +105,48 @@
 
 
   @media screen and (max-width:768px) {
-    .nav{
-      position: absolute;
-      position: fixed;
-      top:0;
-      right: 0;
-      bottom:0;
-      left:0;
-      height: 100vh;
-      width: 200px;
-      transform: translateX(-200px);
-      flex-direction: column;
-      align-items: center;
-      align-items: stretch;
-      justify-content: center;
-      padding:0 15px;
-      background-color: var(--main-color);
-      transition: transform 0.7s ease-in-out;
-    }
-    .nav.no-transition{
-      transition: none;
-   }
-    .nav.active{
-      transform: translateX(0);
-    }
-    .nav-list{
-      flex-direction: column;
-      justify-content: center;
-      align-items: stretch;
-    }
-    .list-item{
-      margin: 15px 0;
-    }
-    .list-item a{
-        color:#fff;
-    }
-    .list-item a.active{
-        color:#202020;
-    }
-    .logo span:first-child{
-      color:#202020;
-    }
-    .hammenu{
-      display: block;
+  .nav-list{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 100px 30px;
+    gap: 20px;
+    background-color: var(--main-color);
+    transform: translateX(100%);
+    transition: transform 0.8s ease-in-out;
   }
+  .nav-list.active{
+    transform: translateX(0);
+  }
+  .nav-list .toggle{
+    display: flex;
+  }
+  .list-item a{
+    color:#fff; 
+  }
+  .list-item a.active{
+      color:#202020;
+  }
+  .hammenu{
+    display: block;
+  }
+  }
+  @media screen and (max-width:425px) {
+    .nav-list .social-icons{
+      display: flex;
+      gap: 7px;
+    }
+  }
+  @media screen and (max-width:320px) {
+    .nav-list{
+      padding: 100px 10px;
+    }
+    .nav-list .social-icons{
+     gap:5px;
+    }
   }

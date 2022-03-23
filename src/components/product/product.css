@@ -1,10 +1,24 @@
 .product{
-    width: 30%;
-    height: 40vh;
-    margin: 20px 10px;
-    border: 2px solid rgb(243,242,242);
+    height: 300px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
+                0px -1px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
+                0px -1px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
+                0px -1px 3px rgba(0,0,0,0.2);
+}
+.product.height{
+    height: 500px;
+}
+.app.dark .product{
+    box-shadow: 0px 1px 5px rgba(255,255,255,0.4),
+                0px -1px 3px rgba(255,255,255,0.4);
+    -moz-box-shadow: 0px 1px 5px rgba(255,255,255,0.4),
+                0px -1px 3px rgba(255,255,255,0.4);
+    -webkit-box-shadow: 0px 1px 5px rgba(255,255,255,0.4),
+                0px -1px 3px rgba(255,255,255,0.4);
 }
 .browser-shape{
     height: 20px;
@@ -31,14 +45,22 @@
 }
 .product-img{
     width: 100%;
+    min-height: 100%;
     object-fit: cover;
     transition: all 10s ease;
 }
-.product:hover .product-img{
+/* .product:hover .product-img{
     transform:translateY(-100%);
     transform:translateY(-77vh)
+} */
+
+@media screen and (max-width:425px) {
+    .product{
+        height: 200px;
+    }
 }
 
+/*
 @media screen and (min-width:1025px) {
     .product:nth-child(3) .product-img{
         height: 100%;
@@ -99,4 +121,4 @@
         width: 100px;
         margin: 10px 5px;
     }
-}
+} */

@@ -1,0 +1,26 @@
+.filter-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:15px;
+    margin-bottom: 20px;
+}
+.filter-btn{
+    border: 0;
+    background:none;
+    outline: 0;
+    background-color:rgb(243,242,242);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.7s ease-in-out;
+}
+.filter-btn.active{
+    background-color: var(--main-color);
+    color:#fff;
+}
+/* .app.dark .filter-btn{
+    color:#fff;
+} */

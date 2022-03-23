@@ -3,6 +3,7 @@ import './toggle.css';
 import Sun from '../../images/sun.png';
 import Moon from '../../images/moon.png';
 import { ThemeContext } from '../../context';
+
 const Toggle = () => {
 
     const theme = useContext(ThemeContext);

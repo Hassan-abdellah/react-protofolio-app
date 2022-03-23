@@ -20,13 +20,12 @@
 }
 .scrollBtn i{
     font-size: 1.5rem;
+    color: #fff;
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:320px) {
     .scrollBtn{
-        bottom: 5px;
-        left:5px;
         width: 35px;
         height: 35px;
-        border-radius: 50%;
+        bottom: 10px;
     }
 }
