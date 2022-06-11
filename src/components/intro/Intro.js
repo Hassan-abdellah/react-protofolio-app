@@ -1,8 +1,8 @@
 import React from 'react'
 import './intro.css';
-import Me from '../../images/me.jpg'
-import ScrollMouse from '../scrollmouse/ScrollMouse';
-const Intro = () => {
+import Hero from '../../images/hero.jpg'
+import CTA from '../cta/CTA';
+const Intro = ({isModal,setIsModal}) => {
   return (
     <div className="intro-container wrapper" id="intro">
       <div className="intro-left">
@@ -22,11 +22,11 @@ const Intro = () => {
             I design and develop services for customers of all sizes,
             specializing in creating stylish, modern websites, web services and online stores.
           </p>
+          <CTA isModal={isModal} setIsModal={setIsModal}/>
         </div>
-        <ScrollMouse />
       </div>
       <div className="intro-right">
-        <img src={Me} alt="man" className="intro-img" />
+        <img src={Hero} alt="man" className="intro-img" />
       </div>
     </div>
   )

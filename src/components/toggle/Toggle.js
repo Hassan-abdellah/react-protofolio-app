@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import './toggle.css';
-import Sun from '../../images/sun.png';
-import Moon from '../../images/moon.png';
+import Sun from '../../images/sun.svg';
+import Moon from '../../images/moon.svg';
 import { ThemeContext } from '../../context';
 
 const Toggle = () => {
@@ -9,13 +9,15 @@ const Toggle = () => {
     const theme = useContext(ThemeContext);
 
     const toggleTheme = () => {
-        theme.dispatch({ type: "TOGGLE"})
+        theme.dispatch({ type: "TOGGLE" })
     }
     return (
         <div className="toggle" onClick={toggleTheme}>
-            <img src={Sun} alt="sun-img" className="toggle-img"/>
-            <img src={Moon} alt="moon-img" className="toggle-img moon"/>
-            <div className={theme.state.darkMode ? "toggle-btn dark" :"toggle-btn"}></div>
+            {theme.state.darkMode ? (
+                <img src={Sun} alt="sun-img" className="toggle-img" />
+            ) : (
+                <img src={Moon} alt="moon-img" className="toggle-img moon" />
+            )}
         </div>
     )
 }

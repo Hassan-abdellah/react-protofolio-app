@@ -3,7 +3,8 @@ import './nav.css';
 import { Link } from 'react-scroll';
 import Social from '../social/Social';
 import Toggle from '../toggle/Toggle';
-const Nav = () => {
+import CTA from '../cta/CTA';
+const Nav = ({isModal,setIsModal}) => {
 
     const [active, setActive] = useState(false);
     const navRef = useRef();
@@ -24,6 +25,7 @@ const Nav = () => {
                 <span>H</span>
                 <span>A</span>
             </div>
+            <Toggle/>
             <ul className={active ? "nav-list active" :"nav-list"}>
                 <li className="list-item">
                     <Link activeClass="active"
@@ -45,12 +47,7 @@ const Nav = () => {
                         spy={true} to="work" smooth={true} offset={-10}
                         duration={500} onClick={() => setActive(false)}>Work</Link>
                 </li>
-                <li className="list-item">
-                    <Link activeClass="active"
-                        spy={true} to="contact" smooth={true}
-                        duration={500} onClick={() => setActive(false)}>Contact Me</Link>
-                </li>
-                <Toggle/>
+                <CTA nav="true" isModal={isModal} setIsModal={setIsModal}/>
                 <Social/>
             </ul>
             <div className={active ? 'hammenu active' : 'hammenu'} onClick={() => setActive(!active)}>

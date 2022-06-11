@@ -9,6 +9,8 @@
 }
 :root{
     --main-color:#59b256;
+    --gray:rgb(243,242,242);
+    --dark-gray:rgb(109, 102, 102);
 }
 ::selection{
     color:#fff;
@@ -35,7 +37,7 @@
   }
 .app{
     background-color: #fff;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .app.dark{
     background-color: #222;

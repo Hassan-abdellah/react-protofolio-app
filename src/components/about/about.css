@@ -2,38 +2,43 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    /* margin-bottom: 20px; */
 }
 .about-left{
     flex: 1;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    position: relative;
-    height: 100%;
+    padding-left: 80px;
 }
-.about-card.bg{
-    position: absolute;
-    /* top:50px; */
-    top:100px;
-    /* left:50px; */
-    left:100px;
-    width: 35%;
-    border: 5px solid var(--main-color);
-    /* background-color: #333; */
+.main-img{
+    width: 250px;
+    height: 250px;
 }
-.about-card{
-    /* width: 60%; */
-    height: 70vh;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.about-card .about-img{
+.main-img > img{
     width: 100%;
-    height:95%;
-    object-fit: contain;
-    border-radius: 30px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    /* border-radius: 50%; */
+}
+.social_icons{
+    list-style: none;
+    position: relative;
+}
+.social_icons li {
+    position: absolute;
+}
+.social_icons li:first-child{
+    transform: translate(6rem,-20rem);
+}
+.social_icons li:nth-child(2){
+    transform: translate(17rem,-10rem);
+}
+.social_icons li:nth-child(3){
+    transform: translate(6rem,1.2rem);
+}
+.social_icons li:nth-child(4){
+    transform: translate(-5rem,-10rem);
+}
+.social_icons li a > img{
+    width: 50px;
 }
 .about-right{
     flex: 1;
@@ -85,13 +90,45 @@
     margin-bottom: 5px;
 }
 
+@media screen and (max-width:768px) {
+    .about{
+        flex-direction: column;
+    }
+    .about-left{
+        margin: 80px auto 0;
+        transform: translateX(-10%);
+    }
+    .main-img{
+        width: 200px;
+        height: 200px;
+    }
+    .main-img > img{
+        border-radius: 50%;
+    }
+    .social_icons li a > img{
+        width: 40px;
+    }
+    .social_icons li:first-child{
+        transform: translate(5rem,-15.5rem);
+    }
+    .social_icons li:nth-child(2){
+        transform: translate(13rem,-8rem);
+    }
+    .social_icons li:nth-child(3){
+        transform: translate(5rem,1.2rem);
+    }
+    .social_icons li:nth-child(4){
+        transform: translate(-3rem,-8rem);
+    }
+}
 @media screen and (max-width:425px) {
+    .about{
+        margin-bottom: 50px;
+    }
     .about-right{
         gap: 30px;
         padding-top: 50px;
-    }
-    .about-left{
-        display: none;
+        margin: 20px 0;
     }
     .about-desc{
         line-height: 2;

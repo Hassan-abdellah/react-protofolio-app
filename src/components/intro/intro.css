@@ -9,8 +9,6 @@
     align-items: center;
 }
 .intro-left-wrapper{
-    /* padding: 50px; */
-    /* height: 50%;  */
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -24,16 +22,6 @@
 }
 .intro-left-wrapper .intro-desc{
     font-size: 1.2rem;
-}
-.scroll-icon{
-    width:30px;
-    height: 30px;
-    position: absolute;
-    bottom:100px;
-    animation: bounce 0.7s ease-in-out infinite alternate;
-}
-.app.dark .scroll-icon{
-    stroke: #fff;
 }
 .job-titles{
     height: 50px;
@@ -108,13 +96,14 @@
     .intro-right .intro-img{
         height: 80%;
     }
-    .scroll-icon{
-        bottom: 10px;
-    }
+    
 }
 @media screen and (max-width:768px) {
     .intro-container{
         padding-top: 70px;
+    }
+    .intro-left-wrapper{
+        gap: 10px;
     }
     .intro-left-wrapper .intro-desc{
         font-size: 1.5rem;
@@ -122,9 +111,10 @@
     }
     .intro-container{
         flex-direction: column;
+        gap:10px;
     }
-    .scroll-icon{
-        bottom: 10px;
+    .intro-right .intro-img{
+        height: 85%;
     }
 }
 @media screen and (max-width:425px) {

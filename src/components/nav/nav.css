@@ -115,6 +115,7 @@
     align-items: stretch;
     justify-content: stretch;
     padding: 100px 30px;
+    padding: 100px 20px;
     gap: 20px;
     background-color: var(--main-color);
     transform: translateX(100%);
@@ -123,8 +124,13 @@
   .nav-list.active{
     transform: translateX(0);
   }
-  .nav-list .toggle{
+  /* .nav-list .toggle{
     display: flex;
+  } */
+  .nav-list .cta-btn-bg{
+    background-color: #fff;
+    color:var(--main-color);
+    width: 100%;
   }
   .list-item a{
     color:#fff; 

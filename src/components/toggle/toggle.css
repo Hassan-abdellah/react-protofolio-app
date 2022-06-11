@@ -1,18 +1,10 @@
 .toggle{
     width: 60px;
     height: 25px;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid #999;
-    background-color: #fff;
-    position: fixed;
-    bottom: 30px;
-    left:5px;
-    transform: rotate(-90deg);
-    z-index: 999;
+    height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     cursor: pointer;
 }
 .toggle-img{
@@ -20,44 +12,4 @@
     width: 20px;
     height: 15px;
     height: 20px;
-}
-.moon{
-    transform: rotate(90deg);
-}
-.toggle-btn{
-    width: 25px;
-    width: 30px;
-    height: 25px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #999;
-    background-color: var(--main-color);
-    position: absolute;
-    cursor: pointer;
-    left: 25px;
-    left: 30px;
-    transition: left 1s ease-in-out;
-}
-.toggle-btn.dark{
-    left: 0;
-}
-
-@media screen and (max-width:768px) {
-    .toggle{
-        top: unset;
-        left:unset;
-        right: unset;
-        bottom:unset;
-        display: none;
-        position: unset;
-        transform: rotate(0);
-    }
-    .toggle-btn{
-        background-color: #202020;
-        transition-duration: 0.2s;
-    }
-    .moon{
-        transform: rotate(0);
-    }
-
 }
