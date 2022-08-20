@@ -1,63 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
 }
-:root{
-    --main-color:#59b256;
-    --gray:rgb(243,242,242);
-    --dark-gray:rgb(109, 102, 102);
+:root {
+  --main-color: #59b256;
+  --gray: rgb(243, 242, 242);
+  --dark-gray: rgb(109, 102, 102);
 }
-::selection{
-    color:#fff;
-    background-color:#202020;
+::selection {
+  color: #fff;
+  background-color: #202020;
 }
 /* utility classes */
-.wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
-.fluid{
-    width: 100%;
+.fluid {
+  width: 100%;
 }
-.animate-bg{
-    background-image: linear-gradient(
-      to right,
-      #f6f7f8 0%,
-      #edeef1 10%,
-      #f6f7f8 20%,
-      #f6f7f8 100%
-    );
-    background-size: 200% 100%;
-    animation: bgPos 1s linear infinite;
+.animate-bg {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+.app {
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.app.dark {
+  background-color: #222;
+  color: #fff;
+}
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: calc(100% - 30px);
   }
-.app{
-    background-color: #fff;
-    transition: all 0.5s ease-in-out;
 }
-.app.dark{
-    background-color: #222;
-    color:#fff;
-}
-@media screen and (max-width:1024px) {
-    .wrapper{
-        width: calc(100% - 30px);
-    }
-}
-@media screen and (max-width:320px) {
-    .app{
-        overflow-x: hidden;
-    }
+@media screen and (max-width: 320px) {
+  .app {
+    overflow-x: hidden;
+  }
 }
 @keyframes bgPos {
-    0% {
-      background-position: 50% 0;
-    }
-    100% {
-      background-position: -150% 0;
-    }
+  0% {
+    background-position: 50% 0;
   }
+  100% {
+    background-position: -150% 0;
+  }
+}

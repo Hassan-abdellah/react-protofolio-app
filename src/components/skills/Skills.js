@@ -15,6 +15,7 @@ import Tailwind from '../../images/skills/tailwindcss.svg';
 import Figma from '../../images/skills/figma.svg';
 import Express from '../../images/skills/express.svg';
 import Firebase from '../../images/skills/firebase.svg';
+import Sass from '../../images/skills/sass.svg';
 const Skills = () => {
     return (
         <div className="skills wrapper" id="skills">
@@ -75,6 +76,10 @@ const Skills = () => {
                 <div className="skill">
                     <img src={Firebase} alt="firebase-icon"/>
                     <h2>Firebase</h2>
+                </div>
+                <div className="skill">
+                    <img src={Sass} alt="sass-icon"/>
+                    <h2>Sass</h2>
                 </div>
             </div>
         </div>
