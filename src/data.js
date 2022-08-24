@@ -77,6 +77,12 @@ export const products = [
     link: "https://kevinphotographer.netlify.app/",
     cats: ["1", "4"],
   },
+  {
+    id: 14,
+    img: "/preview/countries-api.png",
+    link: "https://whereisinworld.netlify.app/",
+    cats: ["2"],
+  },
 ];
 
 export const categories = [
