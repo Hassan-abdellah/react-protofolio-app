@@ -85,6 +85,8 @@
   align-items: center;
   text-decoration: none;
   width: 200px;
+  position: relative;
+  overflow: hidden;
 }
 .download-btn i {
   font-size: 1.1rem;
@@ -92,6 +94,24 @@
   margin-bottom: 5px;
 }
 
+.download-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background-color: var(--gray);
+  opacity: 0.2;
+  transform: translateX(-200px) skew(-45deg);
+  transition: transform 0.9s ease-in-out;
+}
+.download-btn:hover::after {
+  transform: translateX(250px) skew(-45deg);
+}
+.download-btn:hover > i {
+  animation: bounce 1s ease-in-out infinite;
+}
 @media screen and (max-width: 768px) {
   .about {
     flex-direction: column;
@@ -127,6 +147,12 @@
   }
   .social_icons li:nth-child(4) {
     transform: translate(-3rem, -9rem);
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(15px);
   }
 }
 @media screen and (max-width: 425px) {

@@ -35,8 +35,9 @@ const Nav = ({ isModal, setIsModal }) => {
               smooth={true}
               duration={500}
               onClick={() => setActive(false)}
+              data-title="Intro"
             >
-              Intro
+              <span>Intro</span>
             </Link>
           </li>
           <li className="list-item">
@@ -47,8 +48,9 @@ const Nav = ({ isModal, setIsModal }) => {
               smooth={true}
               duration={500}
               onClick={() => setActive(false)}
+              data-title="About"
             >
-              About
+              <span>About</span>
             </Link>
           </li>
           <li className="list-item">
@@ -59,8 +61,9 @@ const Nav = ({ isModal, setIsModal }) => {
               smooth={true}
               duration={500}
               onClick={() => setActive(false)}
+              data-title="Skills"
             >
-              Skills
+              <span>Skills</span>
             </Link>
           </li>
           <li className="list-item">
@@ -72,8 +75,9 @@ const Nav = ({ isModal, setIsModal }) => {
               offset={-10}
               duration={500}
               onClick={() => setActive(false)}
+              data-title="Work"
             >
-              Work
+              <span>Work</span>
             </Link>
           </li>
           <CTA nav="true" isModal={isModal} setIsModal={setIsModal} />

@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  gap: 20px;
 }
 .nav-list .social-icons {
   display: none;
@@ -42,7 +43,31 @@
 .list-item a {
   font-size: 1.3rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+  margin-block: 10px;
+  align-items: center;
+  overflow: hidden;
 }
+.list-item a span {
+  transform: translateY(50%) rotate(0deg);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.list-item a::after {
+  content: attr(data-title);
+  transform: translateY(100%) rotate(20deg);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.list-item a:hover > span {
+  transform: translateY(-100%) rotate(-20deg);
+}
+.list-item a:hover::after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
 .list-item a.active {
   color: var(--main-color);
 }
