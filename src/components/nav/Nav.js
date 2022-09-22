@@ -80,7 +80,9 @@ const Nav = ({ isModal, setIsModal }) => {
               <span>Work</span>
             </Link>
           </li>
-          <CTA nav="true" isModal={isModal} setIsModal={setIsModal} />
+          <li>
+            <CTA nav="true" isModal={isModal} setIsModal={setIsModal} />
+          </li>
           <Social />
         </ul>
         <div
