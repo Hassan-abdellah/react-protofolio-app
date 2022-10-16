@@ -1,11 +1,10 @@
-import React from "react";
-import "./about.css";
-import Me from "../../images/me1.png";
+import './about.css';
+import Me from '../../images/me1.png';
 // social icons photos importing
-import Linkedin from "../../images/social/linkedin.svg";
-import Github from "../../images/social/github.svg";
-import Codepen from "../../images/social/codepen.svg";
-import Twitter from "../../images/social/twitter.svg";
+import Linkedin from '../../images/social/linkedin.svg';
+import Github from '../../images/social/github.svg';
+import Codepen from '../../images/social/codepen.svg';
+import Twitter from '../../images/social/twitter.svg';
 
 const About = () => {
   return (
@@ -54,7 +53,10 @@ const About = () => {
         </ul>
       </div>
       <div className="about-right">
-        <h1 className="about-title">About Me</h1>
+        <h1 className="about-title">
+          About Me
+          <span className="green-line"></span>
+        </h1>
         <p className="about-desc">
           An Engineer who love coding, passionate to show my abilities of work
           and shipping a real world products or apps for the end users to make

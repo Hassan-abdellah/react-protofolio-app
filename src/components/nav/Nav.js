@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./nav.css";
-import { Link } from "react-scroll";
-import Social from "../social/Social";
-import Toggle from "../toggle/Toggle";
-import CTA from "../cta/CTA";
+import React, { useState, useEffect, useRef } from 'react';
+import './nav.css';
+import { Link } from 'react-scroll';
+import Social from '../social/Social';
+import Toggle from '../toggle/Toggle';
+import CTA from '../cta/CTA';
 const Nav = ({ isModal, setIsModal }) => {
   const [active, setActive] = useState(false);
   const navRef = useRef();
@@ -13,9 +13,9 @@ const Nav = ({ isModal, setIsModal }) => {
         setActive(false);
       }
     };
-    document.addEventListener("click", getClickOutside);
+    document.addEventListener('click', getClickOutside);
     return () => {
-      document.removeEventListener("click", getClickOutside);
+      document.removeEventListener('click', getClickOutside);
     };
   }, [active]);
   return (
@@ -26,7 +26,7 @@ const Nav = ({ isModal, setIsModal }) => {
           <span>A</span>
         </div>
         <Toggle />
-        <ul className={active ? "nav-list active" : "nav-list"}>
+        <ul className={active ? 'nav-list active' : 'nav-list'}>
           <li className="list-item">
             <Link
               activeClass="active"
@@ -86,7 +86,7 @@ const Nav = ({ isModal, setIsModal }) => {
           <Social />
         </ul>
         <div
-          className={active ? "hammenu active" : "hammenu"}
+          className={active ? 'hammenu active' : 'hammenu'}
           onClick={() => setActive(!active)}
         >
           <div className="bars">

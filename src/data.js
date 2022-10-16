@@ -3,13 +3,13 @@ export const products = [
     id: 1,
     img: '/images/previews/breaking-bad.png',
     link: 'https://github.com/Hassan-abdellah/react-with-breaking-bad-api',
-    cats: ['0', '2'],
+    cats: ['2'],
   },
   {
     id: 2,
     img: '/images/previews/movie-api.png',
     link: 'https://github.com/Hassan-abdellah/react-movie-app',
-    cats: ['0', '2'],
+    cats: ['2'],
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const products = [
     id: 4,
     img: '/images/previews/url-shortener.png',
     link: 'https://github.com/Hassan-abdellah/link-shortener-api-landing-page',
-    cats: ['0', '2'],
+    cats: ['2'],
   },
   {
     id: 5,
@@ -45,32 +45,32 @@ export const products = [
     id: 8,
     img: '/images/previews/qwery.png',
     link: 'https://github.com/Hassan-abdellah/Qwery-Travel-Landing-Page',
-    cats: ['0', '4'],
+    cats: ['4'],
   },
-  {
-    id: 9,
-    img: '/images/previews/to-do-app.png',
-    link: 'https://github.com/Hassan-abdellah/react-to-do-list-application',
-    cats: ['3'],
-  },
-  {
-    id: 10,
-    img: '/images/previews/twitter-sidebar.png',
-    link: 'https://github.com/Hassan-abdellah/react-twitter-sidebar',
-    cats: ['3'],
-  },
-  {
-    id: 11,
-    img: '/images/previews/Login.png',
-    link: 'https://github.com/Hassan-abdellah/',
-    cats: ['3'],
-  },
-  {
-    id: 12,
-    img: '/images/previews/social-auth.png',
-    link: 'https://github.com/Hassan-abdellah/',
-    cats: ['3'],
-  },
+  // {
+  //   id: 9,
+  //   img: '/images/previews/to-do-app.png',
+  //   link: 'https://github.com/Hassan-abdellah/react-to-do-list-application',
+  //   cats: ['3'],
+  // },
+  // {
+  //   id: 10,
+  //   img: '/images/previews/twitter-sidebar.png',
+  //   link: 'https://github.com/Hassan-abdellah/react-twitter-sidebar',
+  //   cats: ['3'],
+  // },
+  // {
+  //   id: 11,
+  //   img: '/images/previews/Login.png',
+  //   link: 'https://github.com/Hassan-abdellah/',
+  //   cats: ['3'],
+  // },
+  // {
+  //   id: 12,
+  //   img: '/images/previews/social-auth.png',
+  //   link: 'https://github.com/Hassan-abdellah/',
+  //   cats: ['3'],
+  // },
   {
     id: 13,
     img: '/images/previews/photographer-preview.png',
@@ -83,13 +83,37 @@ export const products = [
     link: 'https://whereisinworld.netlify.app/',
     cats: ['2'],
   },
+  {
+    id: 15,
+    img: '/images/previews/app-modern.png',
+    link: 'https://modernapp.netlify.app/',
+    cats: ['0'],
+  },
+  {
+    id: 16,
+    img: '/images/previews/bookmark.jpg',
+    link: 'https://bookybookmarkmanager.netlify.app/',
+    cats: ['0'],
+  },
+  {
+    id: 17,
+    img: '/images/previews/clipboard.jpg',
+    link: 'https://clippyclipboard.netlify.app/',
+    cats: ['0'],
+  },
+  {
+    id: 18,
+    img: '/images/previews/fylo.jpg',
+    link: 'https://flyofilemanager.netlify.app/',
+    cats: ['0'],
+  },
 ];
 
 export const categories = [
   { id: 1, code: '0', name: 'Landing Pages' },
   { id: 2, code: '1', name: 'Tailwind' },
   { id: 3, code: '2', name: 'API Intgeration' },
-  { id: 4, code: '3', name: 'Components' },
+  // { id: 4, code: '3', name: 'Components' },
   { id: 5, code: '4', name: 'Covnert Figma' },
 ];
 
@@ -109,4 +133,5 @@ export const skills = [
   { id: 13, name: 'ExpressJS', image: '/images/skills/express.svg' },
   { id: 14, name: 'Firebase', image: '/images/skills/firebase.svg' },
   { id: 15, name: 'Sass', image: '/images/skills/sass.svg' },
+  { id: 16, name: 'Next JS', image: '/images/skills/nextjs.svg' },
 ];
