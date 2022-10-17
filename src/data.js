@@ -107,6 +107,12 @@ export const products = [
     link: 'https://flyofilemanager.netlify.app/',
     cats: ['0'],
   },
+  {
+    id: 19,
+    img: '/images/previews/agency-beta.png',
+    link: 'https://agency-beta-tailwind.netlify.app/',
+    cats: ['1'],
+  },
 ];
 
 export const categories = [
