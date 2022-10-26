@@ -88,6 +88,11 @@ const Nav = ({ isModal, setIsModal }) => {
         <div
           className={active ? 'hammenu active' : 'hammenu'}
           onClick={() => setActive(!active)}
+          role="button"
+          aria-label={
+            active ? 'close mobile navigation' : 'open mobile navigation'
+          }
+          aria-expanded={active}
         >
           <div className="bars">
             <div className="bar"></div>

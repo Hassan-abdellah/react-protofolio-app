@@ -1,60 +1,59 @@
-.social-icons{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    gap: 20px;
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
 }
-.social-icons a{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color:#202020;
-    width: 100px;
-    transition: color 1s ease;
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #202020;
+  width: 100px;
+  transition: color 1s ease;
 }
-.app.dark .social-icons a{
-    color:#fff;
+.app.dark .social-icons a {
+  color: #fff;
 }
-.social-icon{
-    width: 35px;
-    height:35px;
+.social-icon {
+  width: 35px;
+  height: 35px;
 }
-@media screen and (max-width:768px) {
-    .social-icons{
-        justify-content: end;
-    }
-    .social-icon{
-        width: 30px;
-        height: 30px;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .social-icons{
-        position: absolute;
-        bottom:10px;
-        right: 20px;
-        width: 100%;
-        padding: 10px 0;
-        padding: 0;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .social-icons a{
-        width: 30px;
-    }
-    .social-icons a span{
-        display: none;
-    }
-    .social-icon{
-        width: 30px;
-        height: 30px;
-    }
-}
-@media screen and (max-width:320px) {
-    .social-icons{
-        right:20px
-    }
+@media screen and (max-width: 768px) {
+  .social-icons {
+    justify-content: end;
+  }
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
+@media screen and (max-width: 425px) {
+  .social-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 100%;
+    padding: 10px 0;
+    padding: 0;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .social-icons a {
+    width: 30px;
+  }
+  .social-icons a span {
+    display: none;
+  }
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .social-icons {
+    right: 20px;
+  }
+}
