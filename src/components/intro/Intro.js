@@ -9,7 +9,7 @@ const Intro = ({ isModal, setIsModal }) => {
       <div className="intro-container wrapper">
         <div className="intro-left">
           <div className="intro-left-wrapper">
-            <h2>Hello, My Name is</h2>
+            <h2>Hello 👋, My Name is</h2>
             <h1>Hassan Abdellah</h1>
             <div className="job-titles">
               <span>I’m</span>
@@ -21,9 +21,8 @@ const Intro = ({ isModal, setIsModal }) => {
               </div>
             </div>
             <p className="intro-desc">
-              I design and develop services for customers of all sizes,
-              specializing in creating stylish, modern websites, web services
-              and online stores.
+              Let’s Convert Your new great idea into a real End-User Product,
+              I’m Ready!! and Can’t Wait to listen to it
             </p>
             <CTA isModal={isModal} setIsModal={setIsModal} />
           </div>

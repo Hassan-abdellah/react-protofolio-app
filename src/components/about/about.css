@@ -22,8 +22,16 @@
 .social_icons {
   list-style: none;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  background-color: var(--gray);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
-.social_icons li {
+/* .social_icons li {
   position: absolute;
 }
 .social_icons li:first-child {
@@ -37,9 +45,10 @@
 }
 .social_icons li:nth-child(4) {
   transform: translate(-5rem, -10rem);
-}
+} */
 .social_icons li a > img {
-  width: 50px;
+  /* width: 50px; */
+  width: 40px;
 }
 .about-right {
   flex: 1;
@@ -55,17 +64,7 @@
   font-size: 2rem;
   position: relative;
 }
-/* .about-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 30%;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #59b256;
-  transition: all 1s ease;
-} */
+
 .green-line {
   position: absolute;
   bottom: -10px;
@@ -73,7 +72,7 @@
   width: 30%;
   height: 5px;
   border-radius: 5px;
-  background-color: #59b256;
+  background-color: var(--main-color);
   /* transition: all 1s ease; */
 }
 .about-desc {
@@ -81,12 +80,15 @@
   line-height: 1.8;
   font-size: 1.2rem;
 }
-
+.about-desc .company-name {
+  color: var(--main-color);
+  font-weight: bold;
+}
 .download-btn {
   border: 0;
   cursor: pointer;
   padding: 8px 20px;
-  background-color: #59b256;
+  background-color: var(--main-color);
   color: #fff;
   font-weight: 500;
   border-radius: 5px;
@@ -105,7 +107,7 @@
 }
 
 .download-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -119,9 +121,9 @@
 .download-btn:hover::after {
   transform: translateX(250px) skew(-45deg);
 }
-.download-btn:hover > i {
+/* .download-btn:hover > i {
   animation: bounce 1s ease-in-out infinite;
-}
+} */
 @media screen and (max-width: 768px) {
   .about {
     flex-direction: column;
@@ -135,14 +137,20 @@
     width: 200px;
     height: 200px;
   }
-  .main-img img {
+  /* .main-img img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+  } */
+  .social_icons {
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
   .social_icons li a > img {
     width: 35px;
   }
+  /*
   .social_icons li:first-child {
     transform: translate(5rem, -15.5rem);
     transform: translate(3.5rem, -15.5rem);
@@ -157,7 +165,7 @@
   }
   .social_icons li:nth-child(4) {
     transform: translate(-3rem, -9rem);
-  }
+  } */
 }
 
 @keyframes bounce {

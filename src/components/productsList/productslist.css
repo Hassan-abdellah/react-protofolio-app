@@ -9,6 +9,8 @@
   text-align: center;
   margin-bottom: 40px;
   overflow: hidden;
+  font-family: "Crimson Text", serif;
+  letter-spacing: 5px;
 }
 .projects {
   display: grid;

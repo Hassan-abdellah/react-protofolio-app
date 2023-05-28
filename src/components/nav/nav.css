@@ -102,7 +102,7 @@
 }
 .bars .bar::before,
 .bars .bar::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 3px;
@@ -161,6 +161,14 @@
     background-color: #fff;
     color: var(--main-color);
     width: 100%;
+  }
+  .nav-list .cta-btn {
+    margin-inline: auto;
+    background-color: var(--dark-gray);
+    color: var(--gray);
+  }
+  .nav-list .cta-btn::after {
+    display: none;
   }
   .list-item a {
     color: #fff;

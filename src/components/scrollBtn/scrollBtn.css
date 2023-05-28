@@ -1,31 +1,31 @@
-.scrollBtn{
-    border: 0;
-    outline: 0;
-    position: fixed;
-    bottom: 20px;
-    right: 35px;
-    cursor: pointer;
-    background-color:#59b256;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 998;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    transform: translateY(700px);
-    transition: transform 1s ease-in-out;
+.scrollBtn {
+  border: 0;
+  outline: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 35px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(700px);
+  transition: transform 1s ease-in-out;
 }
-.scrollBtn.show{
-    transform: translateY(0);
+.scrollBtn.show {
+  transform: translateY(0);
 }
-.scrollBtn i{
-    font-size: 1.5rem;
-    color: #fff;
+.scrollBtn i {
+  font-size: 1.5rem;
+  color: #fff;
 }
-@media screen and (max-width:320px) {
-    .scrollBtn{
-        width: 35px;
-        height: 35px;
-        bottom: 10px;
-    }
+@media screen and (max-width: 320px) {
+  .scrollBtn {
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+  }
 }
