@@ -17,12 +17,16 @@ const CTA = ({ nav, isModal, setIsModal }) => {
           My Work
         </Link>
       )}
-      <button
+      <Link
         className="cta-btn cta-btn-underline"
-        onClick={() => setIsModal(true)}
+        spy={true}
+        to="contact"
+        smooth={true}
+        offset={-10}
+        duration={500}
       >
         <span>Contact Me</span>
-      </button>
+      </Link>
     </section>
   );
 };

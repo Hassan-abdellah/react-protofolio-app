@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import './productslist.css';
-import Product from '../product/Product';
-import { products } from '../../data';
-import Buttons from '../buttons/Buttons';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import "./productslist.css";
+import Product from "../../components/product/Product";
+import { products } from "../../data";
+import Buttons from "../../components/buttons/Buttons";
+import { motion } from "framer-motion";
+
 const ProductsList = () => {
-  const [filteredCategory, setFilteredCategory] = useState('0');
+  const [filteredCategory, setFilteredCategory] = useState("0");
   return (
     <div className="products-list wrapper" id="work">
       <div className="products-header">

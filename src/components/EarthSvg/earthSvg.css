@@ -1,0 +1,6 @@
+.svg-dot {
+  fill: var(--main-color);
+}
+.svg-line {
+  stroke: var(--main-color);
+}

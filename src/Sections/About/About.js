@@ -1,3 +1,4 @@
+import React from "react";
 import "./about.css";
 import Me from "../../images/me1.png";
 // social icons photos importing
@@ -18,7 +19,7 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/hassan-abdellah-94751b101/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img src={Linkedin} alt="linkedin-icon" />
             </a>
@@ -27,7 +28,7 @@ const About = () => {
             <a
               href="https://github.com/Hassan-abdellah"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img src={Github} alt="github-icon" />
             </a>
@@ -36,7 +37,7 @@ const About = () => {
             <a
               href="https://codepen.io/HAbdellah"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img src={Codepen} alt="code-icon" />
             </a>
@@ -45,7 +46,7 @@ const About = () => {
             <a
               href="https://twitter.com/hassanabdellah6"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img src={Twitter} alt="twitter-icon" />
             </a>

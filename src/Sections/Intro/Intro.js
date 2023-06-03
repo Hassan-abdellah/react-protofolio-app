@@ -1,15 +1,22 @@
 import React from "react";
 import "./intro.css";
-// import Hero from '../../images/hero.jpg'
-import Hero from "../../images/freelancer.svg";
-import CTA from "../cta/CTA";
+// import Hero from "../../images/freelancer.svg";
+import CTA from "../../components/cta/CTA";
+import FreelancerSvg from "../../components/FreelancerSvg/FreelancerSvg";
+
 const Intro = ({ isModal, setIsModal }) => {
   return (
     <section className="fluid" id="intro">
       <div className="intro-container wrapper">
         <div className="intro-left">
           <div className="intro-left-wrapper">
-            <h2>Hello 👋, My Name is</h2>
+            <h2>
+              Hello
+              <span role="img" aria-label="jsx-a11y/accessible-emoji">
+                👋
+              </span>
+              , My Name is
+            </h2>
             <h1>Hassan Abdellah</h1>
             <div className="job-titles">
               <span>I’m</span>
@@ -28,7 +35,8 @@ const Intro = ({ isModal, setIsModal }) => {
           </div>
         </div>
         <div className="intro-right">
-          <img src={Hero} alt="man" className="intro-img" />
+          {/* <img src={Hero} alt="man" className="intro-img" /> */}
+          <FreelancerSvg />
         </div>
       </div>
     </section>

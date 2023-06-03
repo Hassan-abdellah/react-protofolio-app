@@ -1,5 +1,6 @@
-import './buttons.css';
-import { categories } from '../../data';
+import React from "react";
+import "./buttons.css";
+import { categories } from "../../data";
 
 const Buttons = ({ filteredCategory, setFilteredCategory }) => {
   return (
@@ -9,8 +10,8 @@ const Buttons = ({ filteredCategory, setFilteredCategory }) => {
           <button
             className={
               filteredCategory === category.code
-                ? 'filter-btn active'
-                : 'filter-btn'
+                ? "filter-btn active"
+                : "filter-btn"
             }
             key={category.id}
             onClick={() => setFilteredCategory(category.code)}

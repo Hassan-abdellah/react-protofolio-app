@@ -1,0 +1,6 @@
+.svg-elipse {
+  fill: var(--gray);
+}
+.svg-fill-main-color {
+  fill: var(--main-color);
+}

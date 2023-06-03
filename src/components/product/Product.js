@@ -16,7 +16,7 @@ const Product = ({ product, height }) => {
         <div className="circle"></div>
         <div className="circle"></div>
       </div>
-      <a href={product.link} target="_blank" rel="noreferrer">
+      <a href={product.link} target="_blank" rel="noopener noreferrer">
         <LazyLoadImage
           src={product.img}
           alt="product"
