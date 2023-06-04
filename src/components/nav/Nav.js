@@ -1,23 +1,26 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './nav.css';
-import { Link } from 'react-scroll';
-import Social from '../social/Social';
-import Toggle from '../toggle/Toggle';
-import CTA from '../cta/CTA';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-scroll";
+import Social from "../social/Social";
+import Toggle from "../toggle/Toggle";
+import CTA from "../cta/CTA";
+import "./nav.css";
 const Nav = ({ isModal, setIsModal }) => {
   const [active, setActive] = useState(false);
   const navRef = useRef();
-  useEffect(() => {
-    const getClickOutside = (e) => {
-      if (active && e.target !== navRef.current) {
-        setActive(false);
-      }
-    };
-    document.addEventListener('click', getClickOutside);
-    return () => {
-      document.removeEventListener('click', getClickOutside);
-    };
-  }, [active]);
+
+  // const getClickOutside = (e) => {
+  //   if (active && e.target !== navRef.current) {
+  //     setActive(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   document.addEventListener("click", getClickOutside);
+  //   return () => {
+  //     document.removeEventListener("click", getClickOutside);
+  //   };
+  // }, [active]);
+
   return (
     <header className="fluid nav-container">
       <nav className="nav wrapper" ref={navRef}>
@@ -26,7 +29,7 @@ const Nav = ({ isModal, setIsModal }) => {
           <span>A</span>
         </div>
         <Toggle />
-        <ul className={active ? 'nav-list active' : 'nav-list'}>
+        <ul className={active ? "nav-list active" : "nav-list"}>
           <li className="list-item">
             <Link
               activeClass="active"
@@ -81,16 +84,20 @@ const Nav = ({ isModal, setIsModal }) => {
             </Link>
           </li>
           <li>
-            <CTA nav="true" isModal={isModal} setIsModal={setIsModal} />
+            <CTA
+              nav="true"
+              // isModal={isModal}
+              // setIsModal={setIsModal}
+            />
           </li>
           <Social />
         </ul>
         <div
-          className={active ? 'hammenu active' : 'hammenu'}
-          onClick={() => setActive(!active)}
+          className={active ? "hammenu active" : "hammenu"}
+          onClick={() => setActive(active ? false : true)}
           role="button"
           aria-label={
-            active ? 'close mobile navigation' : 'open mobile navigation'
+            active ? "close mobile navigation" : "open mobile navigation"
           }
           aria-expanded={active}
         >

@@ -4,10 +4,10 @@
   left: 0;
   right: 0;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   z-index: 999;
   transition: all 0.5s ease-in-out;
 }
@@ -20,7 +20,7 @@
 .app.dark .nav-container {
   border-color: rgba(255, 255, 255, 0.3);
   background-color: #222;
-  background-color: rgba(34, 34, 34, 0.2);
+  background-color: rgba(34, 34, 34, 0.8);
 }
 .logo {
   width: 30px;

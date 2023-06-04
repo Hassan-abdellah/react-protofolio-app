@@ -4,10 +4,6 @@ import Nav from "./components/nav/Nav";
 import ProgressBar from "./components/progressbar/ProgressBar";
 import ScrollToTop from "./components/scrollBtn/ScrollToTop";
 import { ThemeContext } from "./context";
-// import Modal from "./components/modal/Modal";
-// import { AnimatePresence } from "framer-motion";
-// import { ToastContainer} from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 import { Toaster } from "react-hot-toast";
 function App() {
   const theme = useContext(ThemeContext);
@@ -34,7 +30,10 @@ function App() {
   }, [width]);
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <Nav isModal={isModal} setIsModal={setIsModal} />
+      <Nav
+      // isModal={isModal}
+      // setIsModal={setIsModal}
+      />
       <ProgressBar width={width} />
       <Intro isModal={isModal} setIsModal={setIsModal} />
       <About />
@@ -43,10 +42,6 @@ function App() {
       <Contact />
       <ScrollToTop scrollBtn={scrollBtn} />
       <Toaster />
-      {/* <AnimatePresence>
-        {isModal && <Modal isModal={isModal} setIsModal={setIsModal} />}
-      </AnimatePresence> */}
-      {/* <ToastContainer/> */}
     </div>
   );
 }
